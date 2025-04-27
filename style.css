@@ -13,7 +13,6 @@ body {
   background: radial-gradient(circle at top left, #000010, #0a0a0a);
   color: #e0f7ff;
   overflow-x: hidden;
-  animation: bgFlow 30s infinite alternate linear;
 }
 
 @keyframes bgFlow {
@@ -62,7 +61,7 @@ nav ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 nav a {
