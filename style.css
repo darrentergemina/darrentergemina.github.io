@@ -36,17 +36,18 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 40px;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0;
 }
 
 nav a {
   color: #00ffff;
-  padding: 10px 20px;
+  padding: 8px 14px;
   border: 2px solid #00ffff;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   box-shadow: 0 0 5px #00ffff;
   transition: background-color 0.4s, color 0.4s, box-shadow 0.4s, transform 0.4s;
 }
@@ -190,4 +191,46 @@ footer {
     padding: 15px 20px;
     text-align: center;
   }
+}
+
+.competences {
+  margin-top: 50px;
+}
+
+.competence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.competence {
+  background: rgba(0, 255, 255, 0.05);
+  border: 2px solid #00ffff;
+  border-radius: 15px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.competence:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00ffff;
+}
+
+.competence img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.competence h3 {
+  font-size: 1.4rem;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.competence p {
+  font-size: 1rem;
+  color: #ccf5ff;
 }
