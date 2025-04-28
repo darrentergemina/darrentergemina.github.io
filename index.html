@@ -9,7 +9,12 @@
 <body>
   <header>
     <h1>Darren Tergemina</h1>
-    <nav>
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>    
+    <nav id = "navbar">
       <ul>
         <li><a href="index.html">À propos de moi</a></li>
         <li><a href="formations.html">Formations</a></li>
@@ -32,5 +37,15 @@
   <footer>
     <p>© 2025 Darren Tergemina. Tous droits réservés.</p>
   </footer>
-</body>
+  
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar').querySelector('ul');
+  
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('showing');
+  });
+  </script>
+
+  </body>
 </html>
